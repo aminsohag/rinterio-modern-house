@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio House</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a8144c5d0d.js" crossorigin="anonymous"></script>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-bg':'#ABEF5F',
+                'primary-bg-1':'rgba(255, 255, 255, 1)',
+                'primary-bg-2':'rgba(255, 255, 255, 0)',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .font-manrope{
+        font-family: "Manrope", serif;
+    }
+    </style>
+</head>
+<body class="font-manrope px-4">
+    <header class="bg-gradient-to-t from-primary-bg-1 to-primary-bg-2">
+        <section class="container mx-auto">
+            <!-- navbar -->
+            <nav>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <a class="btn btn-ghost text-xl font-bold">
+                        <i class="fa-solid fa-arrow-right bg-primary-bg w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
+                        <p class="text-3xl">Rinterio</p></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Home</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Services</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Portfolio</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Blogs</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <div class="hidden md:block">
+                        <div class="flex">
+                            <i class="fa-solid fa-magnifying-glass w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full"></i>
+                            <i class="fa-solid fa-cart-shopping w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full"></i>
+                          <a class="btn bg-primary-bg rounded-3xl text-xl font-bold">Book Consult
+                            <i class="fa-solid fa-arrow-right bg-black text-white w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
+                          </a>
+                          </div>
+                      </div>
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Home</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Services</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Portfolio</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Blogs</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+            <!-- banner part -->
+            <div class="space-y-6 text-center">
+                <div class="flex items-center justify-center ">
+                    <img class="" src="images/banner.png" alt="">
+                </div>
+                <h1 class="w-11/12 mx-auto text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="lg:w-8/12 mx-auto font-medium">A barn house of this design has a striking appearance, blending rustic charm with modern sophistication. Its high ceilings and open floor plan create a spacious and airy interior perfect for .</p>
+                <button><a class=" btn bg-primary-bg bg-opacity-50 rounded-3xl text-xl font-bold px-20 lg:px-4">View Details
+                    <i class="fa-solid fa-arrow-right bg-primary-bg text-black w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
+                  </a></button>
+            </div> 
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
