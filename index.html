@@ -22,6 +22,8 @@
                 'primary-bg':'#ABEF5F',
                 'primary-bg-1':'rgba(255, 255, 255, 1)',
                 'primary-bg-2':'rgba(255, 255, 255, 0)',
+                'footer-color':'#1C1C1C',
+                'primary-bg-3':'rgba(171, 239, 95, 0.5)',
               }
             }
           }
@@ -87,9 +89,12 @@
                 </div>
                 <h1 class="md:w-10/12 mx-auto text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
                 <p class="md:w-8/12 mx-auto font-medium">A barn house of this design has a striking appearance, blending rustic charm with modern sophistication. Its high ceilings and open floor plan create a spacious and airy interior perfect for .</p>
-                <button><a class=" btn bg-primary-bg bg-opacity-50 rounded-3xl text-xl font-bold px-20 lg:px-4">View Details
+                <div class="flex justify-center text-center">
+                  <button class="flex items-center justify-center bg-primary-bg-3 w-full lg:w-max  py-3 px-6 rounded-3xl">
+                    <p class="text-xl font-bold">View Details</p>
                     <i class="fa-solid fa-arrow-right bg-primary-bg text-black w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
-                  </a></button>
+                  </button>
+                </div>
             </div> 
         </section>
     </header>
@@ -229,8 +234,8 @@
         </div>
       </section> -->
       <!-- fifth section -->
-      <section class="container mx-auto px-4">
-        <div class="my-12">
+      <section class="container mx-auto">
+        <div class="my-12 px-4">
           <div class="flex flex-col items-center justify-center text-center">
             <div class="lg:w-3/5 space-y-6">
               <p class="font-bold bg-primary-bg  p-3 w-max mx-auto rounded-lg "><i class="fa-solid fa-arrow-right-long"></i>
@@ -241,12 +246,12 @@
              </div>
           </div>
         </div>
-        <div class="mb-24">
+        <div class="mb-24 px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- card 1 -->
-            <div class="card card-compact bg-base-100 w-96 px-4 pt-6 shadow-2xl">
+            <div class="card card-compact bg-base-100 lg:w-96 p-6 shadow-2xl">
               <figure>
-                <img src="images/article1.png" alt="" />
+                <img class="w-full" src="images/article1.png" alt="" />
               </figure>
               <div class="card-body">
                 <div class="flex gap-4 items-center">
@@ -267,9 +272,9 @@
               </div>
             </div>
             <!-- card 2 -->
-            <div class="card card-compact bg-base-100 w-96 px-4 pt-6 shadow-2xl">
+            <div class="card card-compact bg-base-100 lg:w-96 p-6  shadow-2xl">
               <figure>
-                <img src="images/article2.png" alt="" />
+                <img class="w-full" src="images/article2.png" alt="" />
               </figure>
               <div class="card-body">
                 <div class="flex gap-4 items-center">
@@ -290,9 +295,9 @@
               </div>
             </div>
             <!-- card 3 -->
-            <div class="card card-compact bg-base-100 w-96 px-4 pt-6 shadow-2xl">
+            <div class="card card-compact bg-base-100 lg:w-96 p-6 shadow-2xl">
               <figure>
-                <img src="images/article3.png" alt="" />
+                <img class="w-full" src="images/article3.png" alt="" /> 
               </figure>
               <div class="card-body">
                 <div class="flex gap-4 items-center">
@@ -328,7 +333,7 @@
                 <p>The house design process begins with an initial consultation, where the architect or designer meets with the client to understand their needs and budget.</p>
               </div>
             </div>
-            <div class="mt-12">
+            <div class="mt-12 lg:w-5/6 mx-auto">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="grid grid-cols-1 col-span-2 lg:grid-cols-2 gap-6">
                   <input class="w-full p-3 rounded-2xl" type="text" name="" id="" placeholder="First Name">
@@ -346,8 +351,35 @@
         </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="bg-footer-color">
+      <section class="container mx-auto px-4">
+        <div class="py-24 text-white ">
+          <div class="space-y-12 flex flex-col items-center justify-center text-center">
+            <div class=" lg:w-3/6 space-y-3">
+              <a class="btn btn-ghost text-xl font-bold">
+                <i class="fa-solid fa-arrow-right bg-primary-bg w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45 text-black"></i>
+                <p class="text-3xl">Rinterio</p></a>
+               <div>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p> 
+               </div> 
+            </div>
+            <div>
+              <ul class="flex flex-col lg:flex-row gap-8">
+                <li class="font-medium"><a>Home</a></li>
+                <li class="font-medium"><a>Services</a></li>
+                <li class="font-medium"><a>Portfolio</a></li>
+                <li class="font-medium"><a>Blogs</a></li>
+                <li class="font-medium"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <button><a class=" btn bg-primary-bg rounded-3xl text-xl border-none font-bold">Book Consult
+                <i class="fa-solid fa-arrow-right bg-black text-white w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
+              </a></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
 </body>
 </html>
