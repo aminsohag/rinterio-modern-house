@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
 </head>
 <body class="font-manrope">
     <header>
-        <section class="container mx-auto">
+        <section class="container mx-auto" id="home-sec">
             <!-- navbar -->
             <nav class="px-4">
                 <div class="navbar bg-base-100">
@@ -48,11 +48,11 @@
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
-                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Home</a></li>
-                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Services</a></li>
-                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Portfolio</a></li>
-                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Blogs</a></li>
-                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Contact Us</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#home-sec">Home</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#service-sec">Services</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#portfolio-sec">Portfolio</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#blog-sec">Blogs</a></li>
+                        <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#contact-sec">Contact Us</a></li>
                       </ul>
                     </div>
                     <div class="navbar-end">
@@ -60,7 +60,7 @@
                         <div class="flex">
                             <i class="fa-solid fa-magnifying-glass w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full"></i>
                             <i class="fa-solid fa-cart-shopping w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full"></i>
-                          <a class="btn bg-primary-bg rounded-3xl text-xl font-bold">Book Consult
+                          <a href="http://127.0.0.1:5500/book.html" class="btn bg-primary-bg rounded-3xl text-xl font-bold">Book Consult
                             <i class="fa-solid fa-arrow-right bg-black text-white w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
                           </a>
                           </div>
@@ -72,14 +72,14 @@
                         <ul
                           tabindex="0"
                           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Home</a></li>
-                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Services</a></li>
-                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Portfolio</a></li>
-                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Blogs</a></li>
-                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a>Contact Us</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#home-sec">Home</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#service-sec">Services</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#portfolio-sec">Portfolio</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#blog-sec">Blogs</a></li>
+                            <li class="hover:font-bold text-lg  duration-300 case-in-out"><a href="#contact-sec">Contact Us</a></li>
                         </ul>
                       </div>
-                    </div>
+                    </div>  
                   </div>
             </nav>
             <!-- banner part -->
@@ -134,7 +134,7 @@
       </div>
       </section>
       <!-- second section -->
-      <section class="container mx-auto px-4">
+      <section class="container mx-auto px-4 ">
         <div class="my-24 ">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-2 rounded-2xl shadow-2xl">
             <div class="p-8 flex flex-col items-center space-y-2">
@@ -161,7 +161,7 @@
         </div> 
       </section>
       <!-- third section -->
-      <section class="container mx-auto px-4">
+      <section class="container mx-auto px-4" id="service-sec">
         <div class="my-24 space-y-6">
           <div class="flex flex-col items-center justify-center text-center">
             <div class="lg:w-3/5 space-y-6">
@@ -200,7 +200,7 @@
         </div>
       </section>
       <!-- fourth section -->
-      <section class="container mx-auto px-4">
+      <section class="container mx-auto px-4" id="portfolio-sec">
         <div class="my-24">
           <div class="flex flex-col items-center justify-center text-center">
             <div class="lg:w-3/5 space-y-6">
@@ -284,7 +284,7 @@
        </div>
       </section>
       <!-- fifth section -->
-      <section class="container mx-auto">
+      <section class="container mx-auto" id="blog-sec">
         <div class="my-12 px-4">
           <div class="flex flex-col items-center justify-center text-center">
             <div class="lg:w-3/5 space-y-6">
@@ -371,7 +371,7 @@
         </div>
       </section>
       <!-- sixth section -->
-      <section class="bg-[url('./images/bg.jpg')] bg-no-repeat bg-cover bg-center">
+      <section class="bg-[url('./images/bg.jpg')] bg-no-repeat bg-cover bg-center" id="contact-sec">
         <div class="container mx-auto px-4">
           <div class="py-24">
             <div class="flex flex-col items-center justify-center text-center">
@@ -415,15 +415,15 @@
             </div>
             <div>
               <ul class="flex flex-col lg:flex-row gap-8">
-                <li class="font-medium"><a>Home</a></li>
-                <li class="font-medium"><a>Services</a></li>
-                <li class="font-medium"><a>Portfolio</a></li>
-                <li class="font-medium"><a>Blogs</a></li>
-                <li class="font-medium"><a>Contact Us</a></li>
+                <li class="font-medium"><a href="#home-sec">Home</a></li>
+                <li class="font-medium"><a href="#service-sec">Services</a></li>
+                <li class="font-medium"><a href="#portfolio-sec">Portfolio</a></li>
+                <li class="font-medium"><a href="#blog-sec">Blogs</a></li>
+                <li class="font-medium"><a href="#contact-sec">Contact Us</a></li>
               </ul>
             </div>
             <div>
-              <button><a class=" btn bg-primary-bg rounded-3xl text-xl border-none font-bold">Book Consult
+              <button><a class=" btn bg-primary-bg rounded-3xl text-xl border-none font-bold" href="http://127.0.0.1:5500/book.html">Book Consult
                 <i class="fa-solid fa-arrow-right bg-black text-white w-[32px] h-[32px] flex items-center justify-center rounded-full -rotate-45"></i>
               </a></button>
             </div>
